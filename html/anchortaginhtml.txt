@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Anchor Tags</title>
+	</head>
+	<body>
+		<h2>Image Tag</h2>
+		<img src="https://www.achieversit.com/assets/images/logo-white.png" alt="Ait-image" />
+	
+		<img src="../images/dish.jpg" height="200px" width="300px" alt="dish" />
+	</body>
+</html>

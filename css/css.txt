@@ -1,0 +1,22 @@
+css - cascading style sheets
+
+versions
+	- css1.0
+	- css 2.0
+	- css 3.0 latest version
+
+types of css
+	- Inline 
+	- Internal 
+	- External(prefered)
+
+core concepts of css
+	- selectors - to select the element
+	- properties - to apply the styles to the selected element
+
+
+global Selector/universal selector
+				tag selector
+				class selector
+				id selector
+

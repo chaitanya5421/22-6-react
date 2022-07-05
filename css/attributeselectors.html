@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Attribute Selectors</title>
+		<style>
+			/*has attribute*/
+				[src]{
+					height: 200px;
+					width: auto;
+				}
+
+			/*attr value equals to */
+				[type="text"]{
+					background-color: orange;
+				}
+
+				/*attr value starts with*/
+				[class ^= "aud"]{
+					height: 100px;
+					background-color: yellow;
+				}
+
+				/*attr value ends with*/
+				[src $= "dish.jpg"]{
+					padding: 20px;
+					border: 2px solid blue;
+				}
+
+				/*attr contains*/
+				[id *= "trco"]{
+					text-align: center;
+					color: blue;
+				}
+		</style>
+	</head>
+	<body>
+			<!-- 
+			types of attribute selectors
+				- has attr name
+				- attr value equals to
+				- attr starts with
+				- attr ends with
+				- attr contains
+			 -->
+
+
+		<h2>Attribute Selectors</h2>
+		<img src="../images/dish.jpg" alt="dish" />
+		<input type="text" placeholder="Enter your name" />
+
+		<audio controls class="audio-class">
+			<source src="../multimedia/sampleaudio.mp3" type="audio/mp3" />
+		</audio>
+
+		<section>
+			<img src="../images/dish.jpg" alt="dish" />
+		</section>
+		<h2 id="attrcontainsid">Attribute contains</h2>
+	</body>
+</html>

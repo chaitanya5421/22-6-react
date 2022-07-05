@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>pseudo Selectors</title>
+		<style>
+			ul{
+				list-style-type: none;
+			}
+
+			ul li:first-child{
+				background-color: orange;
+				padding: 20px;
+				margin-bottom: 10px;
+			}
+
+			ul li:last-child {
+				background-color: blue;
+				padding: 20px;
+				margin-bottom: 10px;
+			}
+
+			ul li:nth-child(2) {
+				background-color: yellow;
+				padding: 20px;
+				margin-bottom: 10px;
+			}
+
+			ul li:nth-child(4) {
+				background-color: violet;
+				padding: 20px;
+				margin-bottom: 10px;
+			}
+			ul li:nth-child(3) {
+				background-color: darkcyan;
+				padding: 20px;
+				margin-bottom: 10px;
+			}
+
+			ul li:nth-child(2n+1){
+				border: 2px solid green;
+			}
+
+			ul li:nth-child(2n){
+				border: 2px solid red;
+			}
+
+			/*anchor*/
+
+				a:link{
+					color: green;
+				}
+
+				a:visited{
+					color: brown;
+				}
+
+				input:focus{
+					background-color: orange;
+				}
+
+				ul li:nth-child(even):hover{
+					background-color: lightslategrey;
+					height: 30px;
+				}
+
+
+					/*element selector*/
+					article::first-letter{
+						font-size: 30px;
+						color: green;
+					}
+
+					article::first-line{
+						font-size: 20px;
+						color: firebrick;
+					}
+
+					article::selection{
+						background-color: violet;
+						/*font-size: 30px;*/
+					}
+
+					article::before{
+						content:'*******';
+					}
+
+					article::after{
+						content:'*******';
+					}
+
+		</style>
+	</head>
+	<body>
+		<h2>Pseudo Selector</h2>
+			<!--
+
+			Pseudo Selector helps developer to style the element using its state inside the DOM.
+
+
+			types of pseudo selectors 
+				- pseudo class selector(:)
+					- first-child
+					- last-child
+					- nth-child(3)
+					- nth-child(odd/2n+1)
+					- nth-child(even/2n)
+
+				anchor has four states
+					- link
+					- visited
+					- focus
+					- hover
+
+				- pseudo element selector(::)
+					- ::first-letter
+					- ::first-line
+					- ::selection
+					- ::before
+					- ::after
+			 -->
+
+			 <ul>
+			 	<li>HTML</li>
+			 	<li>CSS</li>
+			 	<li>BOOTSTRAP</li>
+			 	<li>Javascript</li>
+			 	<li>REACTJS</li>
+
+			 </ul>
+
+			 <a href="#"><h3>click here</h3></a>
+
+			 <input type="text" />
+
+			 <article>
+			 	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			 </article>
+			
+	</body>
+</html>

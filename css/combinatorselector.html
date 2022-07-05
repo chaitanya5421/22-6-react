@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>combinator Selectors</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<style>
+			.descsel div{
+				color: brown;
+				font-size: 20px;
+			}
+
+			/*child selector*/
+			div > h2{
+				border: 1px solid blue;
+			}
+
+			/*adjacent sibling selector*/
+			h2 + p{
+				background-color: lightslategrey;
+				border: 1px solid green;
+				font-size: 20px;
+				padding: 20px;
+			}
+
+			/*general sibling selector*/
+			h2 ~ p{
+				color: orangered;
+			}
+
+			ul li{
+				background-color: red;
+			}
+
+		</style>
+	</head>
+	<body>
+
+			<!-- types of combinator selector
+				- descendent selector(space)
+				- child selector(>)
+				- adjacent sibling selector(+)
+				- general sibling selector(~)
+ -->
+			<ul>
+				<li>HTML</li>
+				<li>HTML</li>
+				<li>HTML</li>
+				<li>HTML</li>
+				<li>HTML</li>
+				<li>HTML</li>
+
+			</ul>
+
+
+		<h2>combinator Selectors</h2>
+		<!-- <section class='descsel'>
+			<div>This is my Descendent Selector</div>
+			<h3>This is descedent Heading</h3>
+			<div>This is my Descendent Selector</div>
+			<article>
+				<div>This is my Descendent Selector</div>
+			</article>
+		</section>	 -->
+
+		<!-- <div>
+			<h2>This is my child selector</h2>
+			<p>This is my child selector</p>
+			<h2>This is heading</h2>
+			<section>
+				<h2>This is my child selector</h2>
+			</section>
+
+		</div> -->
+
+
+		<!-- adjacent sibling -->
+			<h2>This is adjacent sibling </h2>
+			<p>This is adjacent para</p>
+			<h3>This is adjacent head</h3>
+			<p>This is adjacent para</p>
+		
+	</body>
+</html>
