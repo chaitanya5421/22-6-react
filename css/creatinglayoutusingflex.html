@@ -3,13 +3,81 @@
 	<head>
 		<title>Creating layout using flex</title>
 		<style>
-			
+			.parentdiv{
+				height: 400px;
+				border: 1px solid grey;
+				display: flex;
+				flex-direction:row;
+				/*flex-wrap: wrap;*/
+				/*flex-flow: column nowrap;*/
+				justify-content: center;
+				align-items: center;
+				/*align-content: space-around;*/
+			}
+
+			.parentdiv > div{
+				width: 200px;	
+				height: 200px;
+				margin: 10px;
+			}
+
+			.parentdiv div:first-child{
+				background-color: yellow;
+				/*flex: 1;*/
+				/*order: 2;*/
+				/*align-self: flex-end;*/
+			}
+
+			.parentdiv div:nth-child(2){
+				background-color: blue;
+				/*flex: 5;*/
+				/*order: 3;*/
+				/*flex-grow: 1;*/
+				/*align-self: center;*/
+			}
+
+			.parentdiv div:last-child{
+				background-color: orange;
+				/*flex: 1;*/
+				/*order: 1;*/
+				/*flex-grow: 0;*/
+				flex-shrink: 0;
+				/*align-self: flex-start;*/
+			}
+
+			.parentdiv div{
+				background-color: orange;
+			}
+
 		</style>
 	</head>
 	<body>
 		 	
-		 	- container properties
-		 	- Item  properties
+		 	<!--
+		 		- container properties
+		 			- flex-direction
+		 			- flew-wrap
+		 			- flex-flow
+		 			- justify-content
+		 			- align-items
+		 			- align-content
+		 		- Item  properties
+		 			- order
+		 			- flex-grow
+		 			- flex
+		 			- shrink
+		 			- align-self
+			
+ 			-->
+
+ 			<div class="parentdiv">
+ 				<div class="div1">Div1</div>
+ 				<div class="div2">Div2</div>
+ 				<div class="div3">Div3</div>
+ 				 				
+
+
+ 			</div>
 			
 	</body>
 </html>
