@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Positions in css</title>
+		<style>
+			body{
+				height: 1600px;
+			}
+			section{
+				border: 1px solid blue;
+				padding: 20px;
+				position: relative;
+			}
+
+			.relativepos{
+				height: 200px;
+				width: 200px;
+				background-color: yellow;
+				position: relative;
+				margin-bottom: 20px;
+				/*top: 100px;
+				left: 200px;*/
+				/*right: 100px;*/
+				/*bottom: 100px;*/
+			}
+
+			.absolutepos{
+				height: 200px;
+				width: 200px;
+				background-color: green;
+				position: absolute;
+				bottom: 0px;
+			}
+
+			.fixedpos{
+				height: 200px;
+				width: 200px;
+				background-color: violet;
+				position: fixed;
+				bottom: 100px;
+				right: 100px;
+			}
+			.stickypos{
+				height: 200px;
+				width: 200px;
+				background-color: darkcyan;
+				position: sticky;
+				top: 100px;
+			}
+
+
+		</style>
+	</head>
+	<body>
+			<!--
+			 positions in css(Top,right,bottom,left)
+				- static
+				- relative
+				- absolute
+				- fixed 
+				- sticky
+			  -->
+			 <section>
+			 	<div class="relativepos"></div>
+	
+			 	<div class="absolutepos"></div>
+			 	<div class="fixedpos"></div>
+			 </section>
+
+			 <div class="stickypos"></div>
+
+			 
+	</body>
+</html>
