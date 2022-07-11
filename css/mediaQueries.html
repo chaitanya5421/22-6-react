@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Media Queries</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+			figure img{
+				width: 100%;
+				height: auto;
+			}	
+			figure{
+				width: 24%;
+				border: 1px solid red;
+				background-color: yellow;
+			}
+
+			.parentdiv{
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			/*mobile*/
+			@media only screen and (max-width: 600px) {
+				figure{
+				width: 100%;
+				background-color: green;
+			}
+
+			.parentdiv{
+				/*flex-direction: column;*/
+			}
+
+			}
+
+			/*tablet*/
+			@media only screen and (min-width: 600px)and (max-width: 768px) {
+				.parentdiv{
+					flex-wrap: wrap;
+				}
+				figure{
+				width: 25%;
+				background-color: orange;
+			}
+
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Media Queries</h2>
+		<div class="parentdiv">
+			<figure>
+				<img src="../images/dish.jpg" alt="dish" />
+				<figcaption>Dish</figcaption>
+			</figure>
+			<figure>
+				<img src="../images/dish.jpg" alt="dish" />
+				<figcaption>Dish</figcaption>
+			</figure>
+			<figure>
+				<img src="../images/dish.jpg" alt="dish" />
+				<figcaption>Dish</figcaption>
+			</figure>
+			<figure>
+				<img src="../images/dish.jpg" alt="dish" />
+				<figcaption>Dish</figcaption>
+			</figure>
+		</div>
+	</body>
+</html>
