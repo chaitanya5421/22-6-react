@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Background Properties</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+			.colorclass{
+				background-color: hsl(75, 50%, 35%,0.5);
+				font-size: 25px;
+			}
+
+			.bgclass{
+				height: 100px;
+				background: linear-gradient(to left,red,green,blue);
+				margin-bottom: 10px;
+			}
+
+			.bgradial{
+				height: 100px;
+				background: radial-gradient(red,green,blue);
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Background Properties</h2>
+		<!--
+		 	background color 
+			 - predefined colors
+			 - hexadecimal colors
+			 - rgb colors
+			 - rgba colors
+			 - hsl colors
+			 - hsla colors
+
+			 - multiple colors
+			 	- linear-gradient()
+			 	- radialgradient()
+		-->
+		<div class="colorclass">This is colors</div>\
+		<div class="bgclass"></div>
+		<div class="bgradial"></div>
+
+	</body>
+</html>
