@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animations</title>
+		<style>
+			div{
+				width: 200px;
+				height: 200px;
+				border: 1px solid red;
+				border-radius: 50%;
+				line-height: 100px;
+				text-align: center;
+				background-color: gold;
+				animation-name: rolling;
+				animation-delay: 2s;
+				animation-duration: 5s;
+				animation-timing-function: all;
+				animation-iteration-count: infinite;
+			}
+
+			@keyframes rolling{
+				0%{
+					transform: rotate(0deg) scale(1.0);
+				}
+				100%{
+					transform: rotate(360deg) scale(0.5); 
+				}
+			}
+		</style>
+	<body>
+		<!-- 
+			Animations
+				- transform
+				- transition
+				- animation
+		 -->
+		 <h2>Animation</h2>
+		 <div>Div</div>
+	</body>
+</html>

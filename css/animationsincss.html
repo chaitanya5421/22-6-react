@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Animations</title>
+		<style>
+			div{
+				border: 1px solid red;
+				padding: 20px;
+				margin-bottom: 10px;
+			}
+
+			div:first-child{
+				transform: translate(10px,10px);
+			}
+
+			div:nth-child(2){
+				transform: scale(0.5,1.0);
+				background-color: yellow;
+			}
+
+			div:nth-child(3){
+				transform: skew(10deg,5deg);
+			}
+
+			div:nth-child(4){
+				transform: rotate(90deg);
+			}
+
+
+
+		</style>
+	<body>
+		<!-- 
+			Animations
+				- transform 
+					- translate
+					- scale
+					- skew
+				- transition
+				- animation
+		 -->
+		 <h2>Transform</h2>
+		 <section class="parentdiv">
+		 	<div>HTML</div>
+		 	<div>CSS</div>
+		 	<div>BOOTSTRAP</div>
+		 	<div>JAVASCRIPT</div>
+		 	<div>REACTJS</div>
+		 </section>
+	</body>
+</html>
